@@ -1,17 +1,11 @@
 import type { Metadata, Viewport } from 'next';
-import { Montserrat, Source_Sans_3 } from 'next/font/google';
+import { Source_Sans_3 } from 'next/font/google';
 import './globals.css';
 import { Providers } from '@/context';
 
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['600', '700'], // semiBold (600), bold (700)
-  variable: '--font-montserrat',
-});
-
 const sourceSans3 = Source_Sans_3({
   subsets: ['latin'],
-  weight: ['400', '600'], // regular (400), semiBold (600)
+  weight: ['400', '600','700'], // regular (400), semiBold (600)
   variable: '--font-source-sans-3',
 });
 
@@ -36,7 +30,7 @@ export default async function RootLayout({
     <html lang='en'>
       <body
         suppressHydrationWarning={true}
-        className={`${montserrat.variable} ${sourceSans3.variable} font-semibold text-foreground-900 scrollbar-none`}
+        className={`${sourceSans3.variable} scrollbar-none`}
       >
         <Providers>{children}</Providers>
       </body>

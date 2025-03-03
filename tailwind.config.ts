@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
 import { heroui } from '@heroui/theme';
 
-const config: Config = {
+export default  {
   content: [
-    "./src/app/**/*.{js,ts,jsx,tsx}",
-    "./src/components/**/*.{js,ts,jsx,tsx}",
-    "./src/utils/**/*.{js,ts,jsx,tsx}",
+    'src/**/*.{ts,tsx}',
+	'./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}'
   ],
   theme: {
 		extend: {
@@ -288,8 +288,9 @@ const config: Config = {
 					colors: {},
 				},
 			},
-		})
+		}),
+		require('@tailwindcss/typography'),
+		require('tailwindcss-animate'),
 	],
-};
+} satisfies Config;
 
-export default config;
