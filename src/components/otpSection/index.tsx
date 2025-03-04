@@ -30,10 +30,10 @@ export const OtpSection = (props: LoginProps) => {
       <div className="text-center  py-4 px-10">
         {/* Header section with welcome messages */}
         {/* Header section with welcome messages */}
-        <p className="pb-[1rem] font-source text-h3 text-content2-700 font-bold leading-8">
+        <p className="font-source text-h5 text-content2-700 font-bold leading-8">
           {t("Enter OTP")}
         </p>
-        <p className="pb-[2rem] font-source text-body2 text-content2 font-regular leading-6">
+        <p className="pb-[1rem] font-source text-body4 text-content2 font-regular leading-6">
           {t("Please enter the one time password (OTP)")} 
           <br/>
           {t("that has been sent to")} +91-7810039215
@@ -56,7 +56,7 @@ export const OtpSection = (props: LoginProps) => {
           <ButtonComponent
             isIcon={false}
             buttonText={loading ? `${t("Signing in")}...` : t("Proceed")}
-            baseClassName="bg-primary w-full h-[4rem]"
+            baseClassName="bg-primary w-full h-[3rem]"
             textClassName="text-background !text-h6"
             bgColor="bg-primary"
             // handleOnClick={onSubmit}

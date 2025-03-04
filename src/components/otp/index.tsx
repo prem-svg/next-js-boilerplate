@@ -183,7 +183,7 @@ export const OtpForm: React.FC<OTPInputProps> = ({
             maxLength={1}
             onChange={(e) => handleChange(e.target.value, index)}
             onKeyUp={(e) => handleKeyUp(e, index)}
-            className={`font-source w-20 h-[4rem] text-body1  text-center !text-content2-700 border rounded-md focus:outline-none focus:ring-2 font-regular 
+            className={`font-source w-[3rem] h-[3rem] text-body3  text-center !text-content2-700 border rounded-md focus:outline-none focus:ring-2 font-regular 
 			${
         isInvalid
           ? "border-red-500 focus:ring-red-500"
