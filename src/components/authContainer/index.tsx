@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { cn } from "@heroui/react";
+import { cn, Image } from "@heroui/react";
 
 /**
  * Props interface for the AuthContainer component
@@ -52,8 +52,19 @@ export const AuthContainer = (props: AuthContainerProps) => {
             />
           </div>
           {/* Right column with centered content */}
-          <div className="flex md:col-span-6 col-span-12  items-center justify-center h-screen">
-            {children}
+          <div className="md:col-span-6 p-8 col-span-12 h-screen relative">
+            <div className="absolute top-8 left-8">
+              <Image
+                src={
+                  "https://firebasestorage.googleapis.com/v0/b/neigbours-849d3.appspot.com/o/Your%20paragraph%20text.png?alt=media&token=c11b6c61-6a07-4d96-9663-d0e4c01e805d"
+                }
+                alt="Revature"
+                className="w-full h- mb-6"
+              />
+            </div>
+            <div className="flex col-span-12 justify-center items-center h-full">
+              {children}
+            </div>
           </div>
         </div>
       </div>

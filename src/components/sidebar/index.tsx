@@ -37,7 +37,6 @@ export type SidebarProps = React.DetailedHTMLProps<
   onSubMenuClick: (subMenu: subListProps) => void;
   OnPressColorMode?: () => void; // on press color mode callback
   OnPressLogout?: () => void; // on press logout callback
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   profileImage?: any; // profile image default revature logo
   isColorMode?: boolean;
   isClinetApp?: boolean;
@@ -75,7 +74,7 @@ export const Sidebar = memo((props: SidebarProps) => {
             <Button
               id={item?.id}
               className={cn(
-                "self-center rounded-lg text-content2-400 hover:!text-primary-100 hover:!bg-primary-foreground h-[2.25rem] min-w-[2.25rem] min-w-[2.25rem]",
+                "self-center rounded-lg text-content2-400 hover:!text-primary-100 hover:!bg-primary-foreground h-[2.25rem] min-w-[2.25rem]",
                 {
                   "!bg-primary-foreground !text-primary-100":
                     item?.route === activeKey,

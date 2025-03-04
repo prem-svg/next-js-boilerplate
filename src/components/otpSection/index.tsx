@@ -34,7 +34,9 @@ export const OtpSection = (props: LoginProps) => {
           {t("Enter OTP")}
         </p>
         <p className="pb-[2rem] font-source text-body2 text-content2 font-regular leading-6">
-          {t("Please enter the one time password (OTP) that has been sent to")} +91-7810039215
+          {t("Please enter the one time password (OTP)")} 
+          <br/>
+          {t("that has been sent to")} +91-7810039215
         </p>
 
         {/* Email input field */}

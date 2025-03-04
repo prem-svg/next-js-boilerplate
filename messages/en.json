@@ -1,7 +1,8 @@
 {
     "welcome": "Welcome to our website",
     "Enter OTP":"Enter OTP",
-    "Please enter the one time password (OTP) that has been sent to":"Please enter the one time password (OTP) that has been sent to",
+    "Please enter the one time password (OTP)":"Please enter the one time password (OTP)",
+    "that has been sent to":"that has been sent to",
     "Proceed":"Proceed",
     "Signing in":"Signing in",
     "By continuing you accpet our":"By continuing you accpet our",

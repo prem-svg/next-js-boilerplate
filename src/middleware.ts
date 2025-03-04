@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import createMiddleware from "next-intl/middleware";
 
 // Define routes that do not require authentication
-const publicRoutes = ['/login', '/onboarding', '/forgot', '/reset'];
+const publicRoutes = ['/en/', '/onboarding', '/forgot', '/reset'];
 
 const intlMiddleware = createMiddleware({
   locales: ["en", "ta"], // Supported languages

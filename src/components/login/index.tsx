@@ -13,6 +13,7 @@ interface LoginProps {
   passwordError?: string;
   emailError?: string;
 }
+
 export const LoginComponent = (props: LoginProps) => {
   const {
     className,
