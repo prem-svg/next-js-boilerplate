@@ -42,7 +42,7 @@ export const LoginComponent = (props: LoginProps) => {
         <div className="mt-[1.75rem] flex items-center justify-between gap">
           <div className="w-[5.3rem] h-[1px] bg-content2-200" />
           <p className="font-source text-nowrap !font-regular text-body4">
-            {t("with Mobile Number")}
+            &nbsp;{t("with Mobile Number")}&nbsp;
           </p>
           <div className="w-[5.3rem] h-[1px] bg-content2-200" />
         </div>
