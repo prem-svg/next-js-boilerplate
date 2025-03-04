@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 import type { Config } from "tailwindcss";
-import { heroui } from '@heroui/theme';
+import { colors, heroui } from '@heroui/theme';
 
 export default  {
   content: [
@@ -82,7 +82,6 @@ export default  {
 				},
 			},
 			fontFamily: {
-				mont: ['var(--font-montserrat)', 'sans-serif'],
 				source: ['var(--font-source-sans-3)', 'sans-serif'],
 				inter: ['Inter', 'sans-serif'],
 			},
@@ -138,7 +137,6 @@ export default  {
 				'light-md': '0px 6px 12px rgba(0, 0, 0, 0.15)', // Medium shadow
 				'light-lg': '0px 8px 16px rgba(0, 0, 0, 0.2)', // Large shadow
 				'light-xl': '0px 10px 24px rgba(0, 0, 0, 0.25)', // Extra large shadow
-
 				'gradient-shadow':
 					'0 4px 6px 0 rgba(255, 255, 255, 0.00), 0 6px 10px 2px rgba(255, 255, 255, 0.44)',
 				'light-xll': '0px 20px 24px -4px #15151514', // Extra large shadow
@@ -174,23 +172,23 @@ export default  {
 					},
 					colors: {
 						primary: {
-							DEFAULT: '#FF7014',
-							foreground: '#FFEFE5',
-							'50': '#F0DFD5',
-							'100': '#FF7014',
-							'200': '#AD4400',
-							'400': '#FD6F14',
-							'500': '#662CC414',
-							'600': '#FF507214',
-							'700': "#E3EFFB",
+							...colors.blue,
+							'50': '#F7F9FF',
+							'100': '#EBEEFF',
+							'500': '#5978FF',
+							'900': '#0D1226',
+							foreground: '#fff',
+							DEFAULT: '#5978FF',
 						},
 						secondary: {
-							DEFAULT: '#65686F',
-							foreground: '#E0E1E2',
-							'50': '#C5CBD1',
-							'100': '#65686F',
-							'200': '#32363F',
-							'300': '#F5F5F5',
+							'50': '#FFF4E5',
+							'200': '#4E585E',
+							'300': '#E6E8E9',
+							'500': '#F8971F',
+							'900': '#402708',
+							'100': '#C0C0C0',
+							foreground: '#fff',
+							DEFAULT: '#F8971F',
 						},
 						success: {
 							DEFAULT: '#51BC51',
@@ -280,6 +278,25 @@ export default  {
 							'1001': '#BE1F9D',
 							'1002': "#FDF0E1",
 							'1003': '#0a6bcb',
+						} as never,
+						foreground: {
+							'950': '#4E4E4E',
+							'900': '#121214',
+							'800': '#555555',
+							'750': '#383E54',
+							'700': '#8D8D8D',
+							'650': '#C0C0C0',
+							'600': '#D9D9D9',
+							'500': '#EBEBEB',
+							'400': '#F5F5F5',
+							'300': '#F9FAFB',
+							'200': '#E0E0E0',
+							'150': '#F7F7F7',
+							'100': '#FAF7F7',
+							'50': '#FFFFFF',
+							DEFAULT: '#121214',
+							foreground: '#121214',
+							textColor: '#333333',
 						} as never,
 					},
 				},

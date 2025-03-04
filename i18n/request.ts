@@ -5,6 +5,7 @@ const locales = ["en", "ta"];
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const locale = await requestLocale;
+  console.log(`../messages/${locale}.json`,"locale")
 
   if (locale && !locales.includes(locale)) notFound();
 

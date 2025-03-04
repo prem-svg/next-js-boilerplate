@@ -1,3 +1,16 @@
 {
-    "welcome": "Welcome to our website"
+    "welcome": "Welcome to our website",
+    "Enter OTP":"Enter OTP",
+    "Please enter the one time password (OTP) that has been sent to":"Please enter the one time password (OTP) that has been sent to",
+    "Proceed":"Proceed",
+    "Signing in":"Signing in",
+    "By continuing you accpet our":"By continuing you accpet our",
+    "T&C":"T&C",
+    "Privacy Policy":"Privacy Policy",
+    "Signup to place order":"Signup to place order",
+    "To proceed, please verify your contact details":"To proceed, please verify your contact details",
+    "with Mobile Number":"with Mobile Number",
+    "Enter Mobile Number":"Enter Mobile Number",
+    "Mobile Number":"Mobile Number",
+    "Sign In":"Sign In"
   }
