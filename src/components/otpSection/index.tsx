@@ -27,7 +27,7 @@ export const OtpSection = (props: LoginProps) => {
     // Main container with background image
     <form onSubmit={onSubmit} className={className}>
       {/* Main content wrapper with scrollable height */}
-      <div className="text-center  py-4 px-10">
+      <div className="text-center mt-4 p-2">
         {/* Header section with welcome messages */}
         {/* Header section with welcome messages */}
         <p className="font-source text-h5 text-content2-700 font-bold leading-8">

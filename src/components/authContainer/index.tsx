@@ -59,7 +59,7 @@ export const AuthContainer = (props: AuthContainerProps) => {
                   "https://firebasestorage.googleapis.com/v0/b/neigbours-849d3.appspot.com/o/Your%20paragraph%20text.png?alt=media&token=c11b6c61-6a07-4d96-9663-d0e4c01e805d"
                 }
                 alt="Revature"
-                className="w-full h- mb-6"
+                className="w-[180px] h-[38px] mb-6"
               />
             </div>
             <div className="flex col-span-12 justify-center items-center h-full">
