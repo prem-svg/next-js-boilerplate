@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { cn, Image } from "@heroui/react";
+import { Image } from "@heroui/react";
 
 /**
  * Props interface for the AuthContainer component
@@ -28,32 +28,24 @@ interface AuthContainerProps {
  * @returns {JSX.Element} The rendered authentication container
  */
 export const AuthContainer = (props: AuthContainerProps) => {
-  const { children, className } = props;
+  const { children } = props;
   return (
-    // Main container with background image
-    <div
-      className={cn(
-        "flex h-screen bg-cover bg-center bg-no-repeat justify-center items-center",
-        className
-      )}
-    >
-      {/* Content wrapper with shadow and rounded corners */}
       <div className="bg-background rounded-[0.75rem] shadow-layout-shadow w-full">
         {/* Main content section with two columns */}
-        <div className="grid grid-cols-12 h-full">
+        <div className="grid grid-cols-12">
           {/* Left column with banner image */}
-          <div className="hidden md:block md:col-span-6 w-full h-full">
+          <div className="hidden md:block md:col-span-6 w-full h-screen">
             <img
               alt="banner"
               src={
                 "https://firebasestorage.googleapis.com/v0/b/neigbours-849d3.appspot.com/o/5024772.jpg?alt=media&token=cdc1d6b6-a045-4d79-a449-b63e60f426c6"
               }
-              className="h-screen w-full"
+              className="h-full w-full"
             />
           </div>
           {/* Right column with centered content */}
-          <div className="md:col-span-6 p-8 col-span-12 h-screen relative">
-            <div className="absolute top-8 left-8">
+          <div className="md:col-span-6 p-8 col-span-12 relative">
+
               <Image
                 src={
                   "https://firebasestorage.googleapis.com/v0/b/neigbours-849d3.appspot.com/o/Your%20paragraph%20text.png?alt=media&token=c11b6c61-6a07-4d96-9663-d0e4c01e805d"
@@ -61,13 +53,12 @@ export const AuthContainer = (props: AuthContainerProps) => {
                 alt="Revature"
                 className="w-[180px] h-[38px] mb-6"
               />
-            </div>
-            <div className="flex col-span-12 justify-center items-center h-full">
+
+            <div className="flex col-span-12 justify-center items-center">
               {children}
             </div>
           </div>
         </div>
       </div>
-    </div>
   );
 };

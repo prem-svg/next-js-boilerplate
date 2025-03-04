@@ -57,14 +57,14 @@ export const OtpSection = (props: LoginProps) => {
             isIcon={false}
             buttonText={loading ? `${t("Signing in")}...` : t("Proceed")}
             baseClassName="bg-primary w-full h-[3rem]"
-            textClassName="text-background !text-h6"
+            textClassName="text-background"
             bgColor="bg-primary"
             // handleOnClick={onSubmit}
             type="submit"
           />
         </div>
 
-        <p className="pt-[1rem] font-source text-body3 text-content2 font-regular leading-6">
+        <p className="pt-[1rem] font-source text-body4 text-content2 font-regular leading-6">
           {t("By continuing you accpet our")} <b>{t("T&C")}</b> {("and")} <b>{t("Privacy Policy")}</b>
         </p>
       </div>

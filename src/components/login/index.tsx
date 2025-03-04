@@ -79,7 +79,7 @@ export const LoginComponent = (props: LoginProps) => {
             isIcon={false}
             buttonText={loading ? "Signing in..." : "Sign In"}
             baseClassName="bg-primary w-full h-[3rem]"
-            textClassName="text-background !text-h6"
+            textClassName="text-background"
             bgColor="bg-primary"
             // handleOnClick={onSubmit}
             type="submit"

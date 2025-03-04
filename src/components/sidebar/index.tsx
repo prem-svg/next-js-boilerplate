@@ -56,7 +56,7 @@ export const Sidebar = memo((props: SidebarProps) => {
   return (
     <div
       className={cn(
-        "h-screen max-h-screen gap-3 bg-background w-[4rem] flex flex-col items-center flex-sh",
+        "max-h-screen gap-3 bg-background w-[4rem] flex flex-col items-center flex-sh",
         className
       )}
       {...rest}
