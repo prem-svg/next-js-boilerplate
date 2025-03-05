@@ -94,7 +94,7 @@ export const ButtonComponent = ({
     <Button
       // Base styling with NextUI Button component
       className={cn(
-        " border border-content2-200 rounded-[0.37rem] gap-1 h-[2.5rem] w-[10rem] transition-colors",
+        " border border-content2-200 rounded-[0.37rem] gap-1 h-[2.5rem] transition-colors",
         bgColor
           ? `${bgColor} hover:!${bgColor} data-[hover=true]:!${bgColor}`
           : "bg-background hover:!bg-background data-[hover=true]:!bg-background", // Allow custom background color

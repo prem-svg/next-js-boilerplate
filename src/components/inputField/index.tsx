@@ -48,7 +48,7 @@ interface InputFieldProps {
 export const InputField = ({
   id,
   className = "w-full",
-  customPlaceholderStyle = "font-source font-regular !font-body3 font-normal !text-content2-500 placeholder:text-body3",
+  customPlaceholderStyle = "font-source font-regular !font-body4 font-normal !text-content2-500 placeholder:text-body4",
   customErrorStyle = "font-source text-body2 text-danger-200 font-normal mt-1 ml-1",
   type,
   value,
@@ -66,7 +66,7 @@ export const InputField = ({
   labelPlacement = "inside",
   variant = "bordered",
   customBackgroundColor,
-  customInputValueStyle = "font-source !font-body3 text-content2-700",
+  customInputValueStyle = "font-source !font-body4 text-content2-700",
   inputWrapperClassName,
   mainWrapperClassName = `${!disabled && "bg-background"}`,
   inputDefaultValue,

@@ -78,7 +78,7 @@ export const Banner = () => {
         <div className="grid grid-cols-12 gap-4 justify-around mt-5">
           {stats?.map((val) => {
             return (
-              <div key={val?.label} className="col-span-12 md:col-span-3">
+              <div key={val?.label} className="col-span-12  sm:col-span-6 md:col-span-4 lg:col-span-3">
                 <StatsCard {...val} />
               </div>
             );

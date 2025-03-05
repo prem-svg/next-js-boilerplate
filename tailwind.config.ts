@@ -132,11 +132,11 @@ export default  {
 				],
 			},
 			boxShadow: {
-				'light-xs': '0px 2px 4px rgba(0, 0, 0, 0.08)', // Extra small shadow
-				'light-sm': '0px 4px 6px rgba(0, 0, 0, 0.1)', // Small shadow
-				'light-md': '0px 6px 12px rgba(0, 0, 0, 0.15)', // Medium shadow
-				'light-lg': '0px 8px 16px rgba(0, 0, 0, 0.2)', // Large shadow
-				'light-xl': '0px 10px 24px rgba(0, 0, 0, 0.25)', // Extra large shadow
+				'light-xs': '0px 2px 4px #5978FF', // Extra small shadow
+				'light-sm': '0px 4px 6px #5978FF', // Small shadow
+				'light-md': '0px 6px 12px #5978FF', // Medium shadow
+				'light-lg': '0px 8px 16px #5978FF', // Large shadow
+				'light-xl': '0px 10px 24px #5978FF', // Extra large shadow
 				'gradient-shadow':
 					'0 4px 6px 0 rgba(255, 255, 255, 0.00), 0 6px 10px 2px rgba(255, 255, 255, 0.44)',
 				'light-xll': '0px 20px 24px -4px #15151514', // Extra large shadow
@@ -189,6 +189,8 @@ export default  {
 							'100': '#C0C0C0',
 							foreground: '#fff',
 							DEFAULT: '#F8971F',
+							'400': '#AD4400',
+							'600': '#FD6F14',
 						},
 						success: {
 							DEFAULT: '#51BC51',
@@ -209,8 +211,12 @@ export default  {
 							'300': '#9A5B13',
 							'400': '#FFF5E3',
 							'500': '#E8D1C3',
-							'600': '#FDF0E1'
-						},
+							'600': '#FDF0E1',
+							'700': '#F0DFD5',
+							'800': '#FF7014',
+							'900': '#AD4400',
+							'1000': '#FD6F14',
+						} as never,
 						danger: {
 							DEFAULT: '#A51818',
 							foreground: '#FCE4E4',
@@ -220,7 +226,11 @@ export default  {
 							'300': '#E8BABA',
 							'400': '#DE6464',
 							'1000': '#FD5367',
-							'1100': '#7D1212'
+							'1100': '#7D1212',
+							'500':'#fae1e1',
+							'600':'#ebd8d8',
+							'700':'#F99589',
+							'800':'#FC4484'
 						} as never,
 						background: {
 							DEFAULT: '#FFFFFF',

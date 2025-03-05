@@ -11,7 +11,7 @@ export const ServiceCard = ({ name, des, img }: ServiceCardProps) => {
   return (
     <Card
       isPressable={true}
-      className="py-[8px] px-[2px] shadow-xl rounded-xl border-content1-50 border-1 bg-foreground-50"
+      className="py-[8px] w-full px-[2px] shadow-lg rounded-xl border-content1-50 border-1 bg-foreground-50"
     >
       <CardBody className="overflow-visible py-2">
         <img
