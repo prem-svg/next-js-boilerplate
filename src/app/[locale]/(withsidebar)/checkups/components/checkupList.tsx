@@ -25,14 +25,14 @@ export const CheckupList = ({
   return (
     <div className="mt-14 md:p-6 lg:p-8 p-4 bg-gradient-to-r from-content1-foreground">
       <div className="flex justify-between md:p-0">
-        <p className="font-source font-semibold text-body3 md:text-h4">
+        <p className="font-source leading-tight font-semibold text-body3 md:text-h4">
           {title}
         </p>
         <div
           className="flex gap-4 items-center cursor-pointer"
           onClick={onClickseeAll}
         >
-          <p className="cursor-pointer font-source font-semibold text-body4 text-primary">
+          <p className="cursor-pointer text-nowrap font-source font-semibold text-body4 text-primary">
             See All
           </p>
           <RightArrowSvgIcon
