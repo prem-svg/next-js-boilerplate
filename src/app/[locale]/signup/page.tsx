@@ -1,10 +1,12 @@
 "use client";
 import { AuthContainer, LoginComponent, OtpSection } from "@/components";
+import { useRouter } from "next/navigation";
 import React from "react";
 // import { useTranslations } from "next-intl";
 
 export default function Home() {
   // const t = useTranslations();
+  const route = useRouter();
   const [otpSended, setOtpSended] = React.useState(false);
 
   return (
@@ -17,7 +19,10 @@ export default function Home() {
           />
         )}
         {otpSended && (
-          <OtpSection handleChange={() => console.log("entering")} />
+          <OtpSection
+            onSubmit={() => route?.push("/home")}
+            handleChange={() => console.log("entering")}
+          />
         )}
       </AuthContainer>
     </div>

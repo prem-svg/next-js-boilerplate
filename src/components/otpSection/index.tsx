@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 interface LoginProps {
   className?: string;
-  onSubmit?: (e: React.FormEvent<HTMLFormElement>) => void;
+  onSubmit?: () => void;
   handleChange: (k: string, v: string) => void;
   loading?: boolean;
   passwordHash?: string;
@@ -25,7 +25,7 @@ export const OtpSection = (props: LoginProps) => {
 
   return (
     // Main container with background image
-    <form onSubmit={onSubmit} className={className}>
+    <form className={className}>
       {/* Main content wrapper with scrollable height */}
       <div className="text-center mt-4 p-2">
         {/* Header section with welcome messages */}
@@ -59,8 +59,7 @@ export const OtpSection = (props: LoginProps) => {
             baseClassName="bg-primary w-full h-[3rem]"
             textClassName="text-background"
             bgColor="bg-primary"
-            // handleOnClick={onSubmit}
-            type="submit"
+            handleOnClick={onSubmit}
           />
         </div>
 

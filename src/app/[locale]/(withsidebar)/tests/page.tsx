@@ -1,7 +1,12 @@
 "use client";
 
 import { SearchDescription, SearchDescriptionMd } from "@/components";
-import { CheckupList, MostBookedTests, TestsForHealthCondition } from "./components";
+import {
+  Banners,
+  CheckupList,
+  MostBookedTests,
+  TestsForHealthCondition,
+} from "./components";
 
 export default function Page() {
   const data = [
@@ -64,11 +69,14 @@ export default function Page() {
         <MostBookedTests />
       </div>
       <CheckupList
-          title="Most Booked Tests"
-          data={data}
-          onClickseeAll={() => console.log()}
-        />
+        title="Most Booked Tests"
+        data={data}
+        onClickseeAll={() => console.log()}
+      />
       <TestsForHealthCondition />
+      <div className="md:m-6 lg:m-8">
+        <Banners />
+      </div>
     </div>
   );
 }

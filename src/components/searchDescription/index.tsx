@@ -35,7 +35,7 @@ export const SearchDescription = ({
       </div>
       <div className={`${bannerImg?.length ? 'mt-0':'mt-4'}`}>
         <div className="bg-primary mx-6 px-2 py-[6px] rounded-tl-xl rounded-tr-xl">
-          <p className="font-source text-body4 text-center font-semibold text-content2-100">
+          <p className="font-source text-nowrap text-body4 text-center font-semibold text-content2-100">
             Book Now Get 15%
           </p>
         </div>

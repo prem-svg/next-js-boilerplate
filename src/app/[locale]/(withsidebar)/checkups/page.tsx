@@ -4,7 +4,7 @@ import {
   SearchDescription,
   SearchDescriptionMd,
 } from "@/components";
-import { CheckupList,MostBooked } from "./components";
+import { Banners, CheckupList,MostBooked } from "./components";
 
 export default function Page() {
   const data = [
@@ -83,6 +83,7 @@ export default function Page() {
         data={data}
         onClickseeAll={() => console.log()}
       />
+      <Banners/>
     </div>
   );
 }

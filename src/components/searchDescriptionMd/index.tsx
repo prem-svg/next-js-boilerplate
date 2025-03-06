@@ -34,9 +34,9 @@ export const SearchDescriptionMd = ({
             </p>
           </div>
           {!searchHide && (
-            <div className="mt-16 bg-secondary-foreground shadow-xl rounded-xl">
-              <div className="bg-primary  mx-20 px-2 py-[8px] rounded-tl-xl rounded-tr-xl">
-                <p className="font-source text-body4 text-center font-semibold text-content2-100">
+            <div className="mt-16 shadow-xl rounded-xl">
+              <div className="bg-primary mx-5 px-2 py-[8px] rounded-tl-xl rounded-tr-xl">
+                <p className="font-source text-nowrap text-body4 text-center font-semibold text-content2-100">
                   Book Now Get 15%
                 </p>
               </div>
